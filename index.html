@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Sahil Jadhav</title>
+    </head>
+    <body>
+        <php
+if (!empty($_POST["send"])){
+
+$username = $_POST["username"];
+$useremail = $_POST["useremail"];
+$usermessage = $_POST["usermessage"];
+$toEmail = $_POST["sahiljadhav3330@gmail.com"];
+
+ $mailHeaders = "Name : " . $userName .
+ "\r\n Email: " .$useremail .
+ "\r\n Message: " .$usermessage . "\r\n"
+
+ if(mail( $toEmail, $username, $mailHeaders)){
+ $message="Your Message is Recived Successfully"
+
+ }
+}
+?>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Sahil Jadhav</a>
+                </div>
+             
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="https://drive.google.com/file/d/1A2nLYigTW8zFxIZ_13r3sgtAbgmogVLz/view?usp=drivesdk" class="resume-button">Download Resume</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                
+                        
+                    
+                
+                <img src="assets/img/sahil.png" alt="">
+            </section>
+            
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <div class="bd-grid">
+                    <div>
+                        <h2 class="section-title">About</h2>
+                        <div>
+                            <h2 class="about__subtitle">I'am Sahil Jadhav</h2>
+                            <p class="about__text">In my academic journey, I completed my 10th grade with distinction, achieving 80.04% from Kidees Info Park, a CBSE school. Following this, I pursued a diploma in Computer Engineering at Swami Vivekanand Institute of Polytechnic, where I graduated with an outstanding 87.7% and earned First-Class Distinction. Currently, I am furthering my education by pursuing a Bachelor's degree in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning at Shri Ramdeobaba College of Engineering and Management. Throughout my academic career, I've cultivated a diverse skill set in programming languages, including Python, Java, JavaScript, MAD, PHP, and HTML/CSS. Moreover, I am proficient in utilizing a range of developer tools such as Git, Github, Android Studio, Visual Studio, Jupyter Notebook, and Xamp. My expertise extends to web development and Android development technologies. Beyond academics, I actively engage in extracurricular activities, particularly in social work. At Green Latur Vruksh Team, I led a community-driven initiative focused on tree planting. Through our efforts, we successfully planted over 90,000 trees, contributing significantly to environmental conservation. Additionally, I coordinated with local environmental organizations and community members to raise awareness about the importance of preserving our environment. One of my notable achievements is being selected for Wipro's Work Integrated Learning Program, a testament to my dedication, skills, and potential in the field. This portfolio encapsulates my academic achievements, technical expertise, and commitment to social and environmental causes, reflecting a holistic approach to personal and professional development.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <div class="bd-grid">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <h3 class="skill-name">Programming Languages</h3>
+                            <ul class="skill-list">
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>Php</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 class="skill-name">Developer Tools</h3>
+                            <ul class="skill-list">
+                                <li>Github</li>
+                                <li>Android Studio</li>
+                                <li>Visual Studio</li>
+                                <li>Jupyter Notebook</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 class="skill-name">Technologies</h3>
+                            <ul class="skill-list">
+                                <li>Android development</li>
+                                <li>Web development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--===== WORK =====-->
+            <section class="education section" id="education">
+                <div class="bd-grid">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-container">
+                        <div class="education-item">
+                            <h3 class="education-title">Bachelor's Degree</h3>
+                            <p class="education-school">Shri Ramdeobaba College of Engineering and Management</p>
+                            <p class="education-year">2026 - Present</p>
+                            <p class="education-description">Pursuing Bachelor's degree in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning.</p>
+                        </div>
+                        <div class="education-item">
+                            <h3 class="education-title">Diploma</h3>
+                            <p class="education-school">Swami Vivekanand Institute of Polytechnic</p>
+                            <p class="education-year">2020 - 2023</p>
+                            <p class="education-description">Completed Diploma in Computer Engineering with First-Class Distinction.</p>
+                        </div>
+                        <div class="education-item">
+                            <h3 class="education-title">High School</h3>
+                            <p class="education-school">Kidees Info Park</p>
+                            <p class="education-year">2020</p>
+                            <p class="education-description">Completed 10th grade with distinction, achieving 80.04%.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form method="post" action="index.html" name="emailcontact" class="contact__form">
+                        <input type="text" name = "username" placeholder="Name" class="contact__input">
+                        <input type="mail" name="useremail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" name="usermessage" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" name ="send" value="Submit" class="contact__button button">
+                        <div class = "sucess">
+                            <strong> <?php echo $message; ?> </strong>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+           
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=100048787158081&mibextid=ZbWKwL" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/saawhiill?igsh=MXU1bDF4aG50cmVvcw==" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://x.com/sahilljadhavv?t=jk2wQy-YrkRjdBEenxC12Q&s=09" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/sahil-jadhav-6a2087291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/sahiiljadhav" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Sahil Jadhav</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
