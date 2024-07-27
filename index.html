@@ -10,6 +10,76 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Sahil Jadhav</title>
+
+        <style>
+            /* Reset some default styles */
+            body, h2, h3, p {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Basic styling */
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+    
+            /* Container for the projects section */
+            #projects {
+                padding: 2rem;
+                background-color: #f4f4f4;
+            }
+    
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+    
+            /* Grid layout for project items */
+            .project-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+    
+            .project-item {
+                background-color: #fff;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+    
+            .project-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+    
+            .project-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+    
+            .project-info {
+                padding: 1rem;
+            }
+    
+            .project-info h3 {
+                margin-bottom: 0.5rem;
+            }
+    
+            .project-info p {
+                color: #666;
+            }
+        </style>
     </head>
     <body>
         <php
@@ -73,11 +143,45 @@ $toEmail = $_POST["sahiljadhav3330@gmail.com"];
                         <h2 class="section-title">About</h2>
                         <div>
                             <h2 class="about__subtitle">I'am Sahil Jadhav</h2>
-                            <p class="about__text">In my academic journey, I completed my 10th grade with distinction, achieving 80.04% from Kidees Info Park, a CBSE school. Following this, I pursued a diploma in Computer Engineering at Swami Vivekanand Institute of Polytechnic, where I graduated with an outstanding 87.7% and earned First-Class Distinction. Currently, I am furthering my education by pursuing a Bachelor's degree in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning at Shri Ramdeobaba College of Engineering and Management. Throughout my academic career, I've cultivated a diverse skill set in programming languages, including Python, Java, JavaScript, MAD, PHP, and HTML/CSS. Moreover, I am proficient in utilizing a range of developer tools such as Git, Github, Android Studio, Visual Studio, Jupyter Notebook, and Xamp. My expertise extends to web development and Android development technologies. Beyond academics, I actively engage in extracurricular activities, particularly in social work. At Green Latur Vruksh Team, I led a community-driven initiative focused on tree planting. Through our efforts, we successfully planted over 90,000 trees, contributing significantly to environmental conservation. Additionally, I coordinated with local environmental organizations and community members to raise awareness about the importance of preserving our environment. One of my notable achievements is being selected for Wipro's Work Integrated Learning Program, a testament to my dedication, skills, and potential in the field. This portfolio encapsulates my academic achievements, technical expertise, and commitment to social and environmental causes, reflecting a holistic approach to personal and professional development.</p>
+                            <p class="about__text">In my academic journey, I completed my 10th grade with distinction, from Kidees Info Park, a CBSE school. Following this, I pursued a diploma in Computer Engineering at Swami Vivekanand Institute of Polytechnic, where I graduated with an outstanding 87.7% and earned First-Class Distinction. Currently, I am furthering my education by pursuing a Bachelor's degree in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning at Shri Ramdeobaba College of Engineering and Management. Throughout my academic career, I've cultivated a diverse skill set in programming languages, including Python, Java, JavaScript, MAD, PHP, and HTML/CSS. Moreover, I am proficient in utilizing a range of developer tools such as Git, Github, Android Studio, Visual Studio, Jupyter Notebook, and Xamp. My expertise extends to web development and Android development technologies. Beyond academics, I actively engage in extracurricular activities, particularly in social work. At Green Latur Vruksh Team, I led a community-driven initiative focused on tree planting. Through our efforts, we successfully planted over 90,000 trees, contributing significantly to environmental conservation. Additionally, I coordinated with local environmental organizations and community members to raise awareness about the importance of preserving our environment. One of my notable achievements is being selected for Wipro's Work Integrated Learning Program, a testament to my dedication, skills, and potential in the field. This portfolio encapsulates my academic achievements, technical expertise, and commitment to social and environmental causes, reflecting a holistic approach to personal and professional development.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+       
+                <section id="projects">
+                    <div class="container">
+                        <h2 class="section-title"> My Projects</h2>
+                        <div class="project-grid">
+                            <div class="project-item">
+                                <div class="project-info">
+                                    <h3><a href="https://github.com/sahiiljadhav/Gym-Management-System-using-Django">Gym Management System using Django</a></h3>
+                                    <p>This project integrates features for tracking workouts, managing classes, and providing a user-friendly interface for both gym staff and members.</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-info">
+                                    <h3><a href="https://github.com/sahiiljadhav/Radar-Using-Arduino-Uno-Ultrasonic-Sensor">Radar Using Arduino Uno Ultrasonic Sensor</a></h3>
+                                    <p>A Radar System using Arduino Uno and an ultrasonic sensor for detecting object distance and angle. </p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-info">
+                                    <h3><a href="https://github.com/sahiiljadhav/Face-Mask-Detection">Face-Mask-Detection</a></h3>
+                                    <p>This project demonstrates a face mask detection system using Convolutional Neural Networks (CNNs) to classify whether a person is wearing a mask or not.</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <div class="project-info">
+                                    <h3><a href="https://github.com/sahiiljadhav?tab=repositories">Crime-record-management</a></h3>
+                                    <p>A brief description of the project, including technologies used and outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </section>
             
             
 
@@ -103,6 +207,7 @@ $toEmail = $_POST["sahiljadhav3330@gmail.com"];
                                 <li>Android Studio</li>
                                 <li>Visual Studio</li>
                                 <li>Jupyter Notebook</li>
+                                <li>Eclipse</li>
                             </ul>
                         </div>
                         <div class="skill">
@@ -138,7 +243,7 @@ $toEmail = $_POST["sahiljadhav3330@gmail.com"];
                             <h3 class="education-title">High School</h3>
                             <p class="education-school">Kidees Info Park</p>
                             <p class="education-year">2020</p>
-                            <p class="education-description">Completed 10th grade with distinction, achieving 80.04%.</p>
+                            <p class="education-description">Specializing in foundational knowledge and skills for future academic and career pursuits.</p>
                         </div>
                     </div>
                 </div>
